@@ -40,5 +40,5 @@ jobs:
         uses: renatoathaydes/setup-java-sdkman@2.1.1
         with:
           # The Java version to make available on the path. Must match a SDKMAN! JDK identifier (e.g. 15.0.0.fx-zulu).
-          java-version: 8
+          java-version: 8.0.292.j9-adpt
           run: sdk install grails 2.5.5
