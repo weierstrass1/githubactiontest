@@ -33,3 +33,4 @@ jobs:
           java-version: 8.0.292.j9
           jdkFile: ${{ steps.sdkman.outputs.file }}
       - run: java -version
+      - run: sdk -version
