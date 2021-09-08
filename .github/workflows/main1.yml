@@ -42,5 +42,4 @@ jobs:
           # The Java version to make available on the path. Must match a SDKMAN! JDK identifier (e.g. 15.0.0.fx-zulu).
           java-version: 8.0.292.j9-adpt 
           # The architecture (x86, x64) of the package.
-      - name: Install SDK 
         run: sdk install grails 2.5.5
