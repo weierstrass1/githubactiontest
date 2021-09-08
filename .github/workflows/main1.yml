@@ -22,28 +22,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-      - name: Setup Java JDK with SDKMAN!
-        # You may pin to the exact commit or the version.
-        # uses: renatoathaydes/setup-java-sdkman@f18c64f4fa9edf95ab1b31bf0485b642f6c4a2a5
         uses:  sdkman/sdkman-action
         id: sdkman
         with:
           candidate: java
           version: 8.0.292.j9-adpt 
       - uses: actions/setup-java@v1
-        id: setup-java
+          id: setup-java
           with:
             java-version: 8.0.292
             jdkFile: ${{ steps.sdkman.outputs.file }}
