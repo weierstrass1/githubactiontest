@@ -22,26 +22,5 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: sdkman/sdkman-action@master
-        id: sdkman
-        with:
-          candidate: java
-          version: 8.0.292.j9-adpt
-      - uses: actions/setup-java@v1
-        id: setup-java
-        with:
-          java-version: 8.0.292.j9
-          jdkFile: ${{ steps.sdkman.outputs.file }}
-      - run: java -version
-      - uses: sdkman/sdkman-action@master
-        id: grails
-        with:
-          candidate: grails
-          version: 2.5.5
-      - uses: sdkman/sdkman-action@master
-        id: groovy
-        with:
-          candidate: groovy
-          version: 3.0.9
-      - run: ls
+      - run: curl -s "https://get.sdkman.io" | bash
 
