@@ -38,4 +38,10 @@ jobs:
         with:
           candidate: grails
           version: 2.5.5
-        run: grails -version
+      - uses: sdkman/sdkman-action@master
+        id: groovy
+        with:
+          candidate: groovy
+          version: 3.0.9
+      - run: groovy -version
+
