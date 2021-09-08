@@ -26,7 +26,7 @@ jobs:
         id: sdkman
         with:
           candidate: java
-          version: 8.0.292.j9-adpt 
+          version: 8.0.292.j9-adpt
       - uses: actions/setup-java@v1
           id: setup-java
           with:
