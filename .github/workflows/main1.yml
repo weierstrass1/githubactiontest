@@ -38,4 +38,4 @@ jobs:
         with:
           candidate: grails
           version: 2.5.5
-      - run: grails -version
+        run: grails -version
