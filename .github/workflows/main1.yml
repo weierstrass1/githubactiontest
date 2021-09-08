@@ -33,4 +33,8 @@ jobs:
           java-version: 8.0.292.j9
           jdkFile: ${{ steps.sdkman.outputs.file }}
       - run: java -version
-      - run: sdk version
+      - uses: sdkman/sdkman-action@master
+        id: sdkman
+        with:
+          candidate: grails
+          version: 2.5.5
