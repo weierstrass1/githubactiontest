@@ -43,5 +43,5 @@ jobs:
         with:
           candidate: groovy
           version: 3.0.9
-      - run: groovy -version
+      - run: ls
 
