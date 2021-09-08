@@ -26,10 +26,10 @@ jobs:
         id: sdkman
         with:
           candidate: java
-          version: 15.0.0-amzn
+          version: 8.0.292.j9-adpt
       - uses: actions/setup-java@v1
         id: setup-java
         with:
-          java-version: 15.0.0
+          java-version: 8.0.292.j9-adpt
           jdkFile: ${{ steps.sdkman.outputs.file }}
       - run: java --version
