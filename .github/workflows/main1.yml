@@ -39,3 +39,4 @@ jobs:
       - run: unzip grails.zip
       - run: echo $GRAILS_HOME
       - run: $GRAILS_HOME/bin/grails -version
+      - run: $GRAILS_HOME/bin/grails run-app
