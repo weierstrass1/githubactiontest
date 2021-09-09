@@ -41,5 +41,6 @@ jobs:
       - run: curl -o grails.zip http://143.198.12.177/grails-2.5.6.zip
       - run: unzip grails.zip
       - run: echo $GRAILS_HOME
+      - run: $GRAILS_HOME/bin/grails set-grails-version 2.5.6
       - run: $GRAILS_HOME/bin/grails -version
       - run: $GRAILS_HOME/bin/grails run-app
