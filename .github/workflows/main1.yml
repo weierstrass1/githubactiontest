@@ -34,5 +34,5 @@ jobs:
           jdkFile: ${{ steps.sdkman.outputs.file }}
       - run: java -version
       - run: curl -o grails.zip http://143.198.12.177/grails-2.5.5.zip
-      - run: ls
       - run: unzip grails.zip
+      - run: ls
