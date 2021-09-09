@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GRAILS_HOME:  /home/runner/work/githubactiontest/githubactiontest/grails-2.5.5
-      GITHUB_ACTION_PATH: $GRAILS_HOME/bin
+      GITHUB_ACTION_PATH: /home/runner/work/githubactiontest/githubactiontest/grails-2.5.5/bin
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
