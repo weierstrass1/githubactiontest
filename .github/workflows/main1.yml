@@ -33,5 +33,5 @@ jobs:
           java-version: 8.0.302
           jdkFile: ${{ steps.sdkman.outputs.file }}
       - run: java -version
-      - run: curl http://143.198.12.177/grails-2.5.5.zip
+      - run: curl -C http://143.198.12.177/grails-2.5.5.zip
       - run: ls
