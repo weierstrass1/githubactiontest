@@ -39,4 +39,6 @@ jobs:
       - run: unzip grails.zip
       - run: echo $GRAILS_HOME
       - run: $GRAILS_HOME/bin/grails -version
+      - name: Setup repo
+        uses: actions/checkout@v2
       - run: $GRAILS_HOME/bin/grails run-app
