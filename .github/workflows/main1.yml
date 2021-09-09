@@ -20,7 +20,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      GRAILS_HOME: grails-2.5.5
+      GRAILS_HOME:  /home/runner/work/githubactiontest/githubactiontest/grails-2.5.5
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -38,4 +38,4 @@ jobs:
       - run: curl -o grails.zip http://143.198.12.177/grails-2.5.5.zip
       - run: unzip grails.zip
       - run: echo $GRAILS_HOME
-      - run: pwd
+      - run: grails -version
