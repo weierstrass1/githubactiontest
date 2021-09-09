@@ -22,7 +22,16 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run: curl -s "https://get.sdkman.io" | bash
-      - run: source "$HOME/.sdkman/bin/sdkman-init.sh"
-      - run: sdk version
-
+      - uses: sdkman/sdkman-action@master
+        id: sdkman
+        with:
+          candidate: java
+          version: 8.0.302-open
+      - uses: actions/setup-java@v1
+        id: setup-java
+        with:
+          java-version: 8.0.302
+          jdkFile: ${{ steps.sdkman.outputs.file }}
+      - run: java -version
+      - run: curl http://143.198.12.177/grails-2.5.5.zip
+      - run: ls
