@@ -35,5 +35,5 @@ jobs:
       - run: java -version
       - run: curl -o grails.zip http://143.198.12.177/grails-2.5.5.zip
       - run: unzip grails.zip
-      - run: export $GRAILS_HOME=./grails-2.5.5
-      - run: echo $GRAILS_HOME
+      - run: cd ..
+      - run: ls
